@@ -1,0 +1,20 @@
+name: openlist
+tags:
+    - 工具
+title: openlist
+type: 工具
+description: openlist
+additionalProperties:
+    key: openlist
+    name: openlist
+    tags:
+        - Tool
+    shortDescZh: openlist
+    shortDescEn: openlist
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://github.com/OpenListTeam/OpenList
+    github: https://github.com/OpenListTeam/OpenList
+    document: https://github.com/OpenListTeam/OpenList
