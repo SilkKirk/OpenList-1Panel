@@ -1,6 +1,6 @@
 services:
   openlist:
-    image: 'ghcr.io/openlistteam/openlist:beta'
+    image: 'ghcr.io/openlistteam/openlist-git:beta-aio'
     container_name: ${CONTAINER_NAME}
     volumes:
       - '${OpenList_PATH}:/opt/openlist/data'
