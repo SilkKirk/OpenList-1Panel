@@ -25,20 +25,20 @@ jobs:
       - name: Check current directory contents
         run: |
           echo "Current directory contents:"
-          ls -la /home/runner/work/openlist/openlist
+          ls -la /home/runner/work/OpenList-1Panel/OpenList-1Panel
 
       - name: Get current folder name
         id: get_current_folder
         run: |
-          current_folder=$(basename $(ls -d /home/runner/work/openlist/openlist/*/ | head -n 1))
+          current_folder=$(basename $(ls -d /home/runner/work/OpenList-1Panel/OpenList-1Panel/*/ | head -n 1))
           echo "Current folder name: $current_folder"
           echo "current_folder_name=$current_folder" >> $GITHUB_ENV
 
       - name: Compare and rename folder
         if: ${{ env.current_folder_name != env.tag }}
         run: |
-          current_folder="/home/runner/work/openlist/openlist/${{ env.current_folder_name }}"
-          target_folder="/home/runner/work/openlist/openlist/${{ env.tag }}"
+          current_folder="/home/runner/work/OpenList-1Panel/OpenList-1Panel/${{ env.current_folder_name }}"
+          target_folder="/home/runner/work/OpenList-1Panel/OpenList-1Panel/${{ env.tag }}"
           
           echo "Current folder path: $current_folder"
           echo "Target folder path: $target_folder"
